@@ -112,6 +112,7 @@ Displays both the mean round-trip time and the amortized time per single integer
 - Windows tests performed on AMD Ryzen AI 9 HX-370, 32 GB RAM, Windows 11 64-bit. 
 - Linux tests performed on Intel Xeon E-2124, 16 GB RAM, Debian 13 64-bit.
 
+All time spans are measured in microseconds (us).
 
 ### FFI benchmark 1
 #### Windows
