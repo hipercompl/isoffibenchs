@@ -1,0 +1,31 @@
+AMD Ryzen AI 9 HX-370, 32GB RAM, Windows 11
+
+FFI benchmark 1: int func(int)
+Timing Dart native function
+Timing FFI function
+Native Dart call: 0.00021 us
+FFI call: 0.0132 us
+FFI / native: 62.857142857142854
+
+FFI benchmark 2: void func(int*, int*) vs void func(List<int>, List<int>)
+Timing Dart native function
+Timing FFI function
+Native Dart call: 0.02098 us
+FFI call: 0.08762 us
+FFI / native: 4.176358436606292
+
+Isolates test 1: I1 -> int + port -> I2 -> int -> I1
+Spawning a background isolate
+BG :: isolate spawned
+BG :: port sent to main isolate
+Timing isolate communication
+Single int roundtrip: 3.2752 us
+
+Isolates test 1: I1 -> [10000 ints] + port -> I2 -> [10000 ints] -> I1
+Spawning a background isolate
+BG :: isolate spawned
+BG :: port sent to main isolate
+Timing isolate communication
+[10000 ints] roundtrip: 10.0955 us
+Single int roundtrip: 0.00100955 us
+

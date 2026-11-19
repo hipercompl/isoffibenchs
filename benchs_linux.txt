@@ -1,0 +1,30 @@
+Intel Xeon E-2124, 16 GB RAM, Debian 13
+
+FFI benchmark 1: int func(int)
+Timing Dart native function
+Timing FFI function
+Native Dart call: 0.00111 us
+FFI call: 0.01655 us
+FFI / native: 14.909909909909908
+
+FFI benchmark 2: void func(int*, int*) vs void func(List<int>, List<int>)
+Timing Dart native function
+Timing FFI function
+Native Dart call: 0.03836 us
+FFI call: 0.10242 us
+FFI / native: 2.669968717413973
+
+Isolates test 1: I1 -> int + port -> I2 -> int -> I1
+Spawning a background isolate
+BG :: isolate spawned
+BG :: port sent to main isolate
+Timing isolate communication
+Single int roundtrip: 4.5244 us
+
+Isolates test 1: I1 -> [10000 ints] + port -> I2 -> [10000 ints] -> I1
+Spawning a background isolate
+BG :: isolate spawned
+BG :: port sent to main isolate
+Timing isolate communication
+[10000 ints] roundtrip: 21.9833 us
+Single int roundtrip: 0.00219833 us

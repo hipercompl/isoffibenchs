@@ -1,0 +1,1 @@
+clang -shared -o nlib.dll nlib.c
